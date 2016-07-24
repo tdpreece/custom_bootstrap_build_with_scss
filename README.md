@@ -37,6 +37,29 @@ Installed Bootstrap using Bower.
 ./node_modules/bower/bin/bower install --save bootstrap-sass
 ```
 
+# Customizing Bootstrap
+
+I created a scss file for my site.
+
+```
+mkdir scss
+```
+
+./scss/site.scss
+```
+@import "bootstrap";
+@import "bootstrap/theme";
+```
+
+I built the the css.
+
+```
+mkdir css
+./node_modules/node-sass/bin/node-sass --include-path ./bower_components/bootstrap-sass/assets/stylesheets -o css scss/
+```
+
+This produced the ./css/site.css file.
+
 
 # References
 [Creating a Custom Bootstrap Build With SCSS - Trey Hunner](https://www.codementor.io/development-process/tutorial/create-custom-bootstrap-build-with-scss)
