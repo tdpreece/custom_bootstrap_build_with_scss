@@ -1,3 +1,9 @@
+The following describes how I went about customising bootstrap using
+Scss.
+I tried to do this with as few dependencies as possible so that I could
+focus on the subject.  In production I'd use [Gulp](http://gulpjs.com/)
+to automate the build process.
+
 # Prerequisites
 * Node
 
