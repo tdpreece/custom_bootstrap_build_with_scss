@@ -1,13 +1,15 @@
+# Custom bootstrap build with SCSS
+
 The following describes how I went about customising bootstrap using
 Scss.
 I tried to do this with as few dependencies as possible so that I could
 focus on the subject.  In production I'd use [Gulp](http://gulpjs.com/)
 to automate the build process.
 
-# Prerequisites
+## Prerequisites
 * Node
 
-# Setting up
+## Setting up
 I created a new directory for this project then crated a new node 
 project by running a the following command and hitting enter when 
 presented with questions.
@@ -43,7 +45,7 @@ Installed Bootstrap using Bower.
 ./node_modules/bower/bin/bower install --save bootstrap-sass
 ```
 
-# Building the css from scss
+## Building the css from scss
 
 I created a scss file for my site.
 
@@ -66,7 +68,7 @@ mkdir css
 
 This produced the ./css/site.css file.
 
-# Customizing Bootstrap
+## Customizing Bootstrap
 
 Bootstrap can be customized by setting variables, which will take 
 presedence to Bootstrap's defaults.  A list of these variables can be 
@@ -75,12 +77,12 @@ found in `./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variab
 I wanted to change the colour of the primary buttons so I needed to 
 specify a new colour for the $btn-primary-bg variable.
 
-I created a [partial SCSS file](http://sass-lang.com/guide#topic-4) to 
+I created a [partial SCSS file](http://sass-lang.com/guide##topic-4) to 
 store my variables.
 ./scss/_variables.scss
 
 ```
-$btn-primary-bg: #ff2828;
+$btn-primary-bg: ##ff2828;
 ```
 
 I then imported the _variables.scss in site.scss
@@ -95,12 +97,12 @@ I then imported the _variables.scss in site.scss
 
 variables has to be included before bootstrap because way bootstrap goes
 about letting you 'override' variables.  In `./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss`
-you'll notice that variable definitions are followed by [`!default`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html#variable_defaults_), 
+you'll notice that variable definitions are followed by [`!default`](http://sass-lang.com/documentation/file.SASS_REFERENCE.html##variable_defaults_), 
 which means that the variable is only assigned if it hasn't already been
 assigned.
 
 ```
-$btn-primary-color:              #fff !default;
+$btn-primary-color:              ##fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             darken($btn-primary-bg, 5%) !default;`
  
@@ -114,11 +116,11 @@ changes had been applied.
 ```
 ...
 .btn-primary {
-  color: #fff;
-  background-color: #ff2828;
-  border-color: #ff0f0f; }
+  color: ##fff;
+  background-color: ##ff2828;
+  border-color: ##ff0f0f; }
 ...
 ```
 
-# References
+## References
 [Creating a Custom Bootstrap Build With SCSS - Trey Hunner](https://www.codementor.io/development-process/tutorial/create-custom-bootstrap-build-with-scss)
