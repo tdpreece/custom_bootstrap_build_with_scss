@@ -75,7 +75,7 @@ found in `./bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variab
 I wanted to change the colour of the primary buttons so I needed to 
 specify a new colour for the $btn-primary-bg variable.
 
-I created a (partial Scss file)[http://sass-lang.com/guide#topic-4] to 
+I created a [partial SCSS file](http://sass-lang.com/guide#topic-4) to 
 store my variables.
 ./scss/_variables.scss
 
@@ -107,7 +107,7 @@ $btn-primary-border:             darken($btn-primary-bg, 5%) !default;`
 ```
 
 
-I then re-build the site css file and opened it up to check that my 
+I then re-built the site css file and opened it up to check that my 
 changes had been applied.
 
 ./css/site.css
