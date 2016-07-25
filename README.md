@@ -15,7 +15,7 @@ project by running a the following command and hitting Enter when
 presented with questions.
 
 
-```
+```bash
 mkdir custom_bootstrap_build_with_scsss
 cd custom_bootstrap_build_with_scsss
 npm init
@@ -23,26 +23,26 @@ npm init
 
 I Installed node-sass, which compiles .scss files to css.
 
-```
+```bash
 npm install --save node-sass
 ```
 
 I then installed [Bower](https://bower.io/) a package manager for 
 front-end components.
 
-```
+```bash
 npm install --save bower
 ```
 
 I created a bower.json file by running the following command and hitting
 Enter when presented with questions.
 
-```
+```bash
 ./node_modules/bower/bin/bower init
 ```
 
 I used Bower to install Bootstrap.
-```
+```bash
 ./node_modules/bower/bin/bower install --save bootstrap-sass
 ```
 
@@ -50,7 +50,7 @@ I used Bower to install Bootstrap.
 
 I created a scss dir for my site,
 
-```
+```bash
 mkdir scss
 ```
 
@@ -64,7 +64,7 @@ and added a file to hold my site's scss.
 
 I built the the css using node-sass.
 
-```
+```bash
 mkdir css
 ./node_modules/node-sass/bin/node-sass --include-path ./bower_components/bootstrap-sass/assets/stylesheets -o css scss/
 ```
