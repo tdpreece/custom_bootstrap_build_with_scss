@@ -10,8 +10,8 @@ to automate the build process.
 * Node
 
 ## Setting up
-I created a new directory for this project then crated a new node 
-project by running a the following command and hitting Enter when 
+I created a new directory for this project then crated a new node
+project by running the following command and hitting Enter when
 presented with questions.
 
 
@@ -27,7 +27,7 @@ I Installed node-sass, which compiles .scss files to css.
 npm install --save node-sass
 ```
 
-I then installed [Bower](https://bower.io/) a package manager for 
+I then installed [Bower](https://bower.io/) a package manager for
 front-end components.
 
 ```bash
